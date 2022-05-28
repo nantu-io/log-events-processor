@@ -1,2 +1,4 @@
 boto
 argparse
+boto3
+configparser
