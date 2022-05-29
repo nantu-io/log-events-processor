@@ -33,7 +33,7 @@ class RecordProcessor(processor.RecordProcessorBase):
         self._last_checkpoint_time = None
 
         config = configparser.RawConfigParser()
-        config.read('cloudwatch.properties')
+        config.read('config/cloudwatch.properties')
         cloudwatch_region = config.get('CloudWatch', 'region')
         cloudwatch_log_group = config.get('CloudWatch', 'logGroup')
         self._log_events_writer = LogEventsCloudWatchWriter(cloudwatch_region, cloudwatch_log_group)

@@ -2,8 +2,8 @@ services:
   log-events-processor:
     image: ntcore/log-events-processor
     volumes:
-      - "./ntcore/config/kclpy.properties:/amazon-kinesis-client-python/ntcore/kclpy.properties"
-      - "./ntcore/config/cloudwatch.properties:/amazon-kinesis-client-python/ntcore/cloudwatch.properties"
+      - "./ntcore/config/kclpy.properties:/amazon-kinesis-client-python/ntcore/config/kclpy.properties"
+      - "./ntcore/config/cloudwatch.properties:/amazon-kinesis-client-python/ntcore/config/cloudwatch.properties"
     environment:
       - AWS_ACCESS_KEY_ID=
       - AWS_SECRET_ACCESS_KEY=
